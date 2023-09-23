@@ -147,7 +147,7 @@ print(b) # prints True
 
 # ----------- for loop -----------
 #for loop is used to execute the same instruction over and over again, a specific number of times.
-#range() creates 5 numbers in a sequence, starting from 0.
+#range() function creates 5 numbers in a sequence, starting from 0.
 for i in range(5):
     print("Hello there")
 # The code that gets repeated in the for loop must be indented. Indentation is the spaces at the beginning of lines.
@@ -269,3 +269,10 @@ print(c[1:-1]) # Prints the two middle items ['£', '€'] because the indexes g
 c = ['$', '£', '€', '¥']
 c[:2] = ['₣', '฿'] # Change the values of the two first items on list.
 print(c) # Prints ['₣', '฿', '€', '¥']
+
+# ----------- Functions -----------
+# Functions perform tasks, we saw already print(), type() and input().
+print("Your seat:", 4)
+# NOTE: Two arguments in print func, printed with a space between them
+# print() accepts any type of arguments, range() accepts only integers
+# A function can be an argument for another function.
