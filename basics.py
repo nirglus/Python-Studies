@@ -153,4 +153,11 @@ for i in range(5):
 # for i in range(5):
 # print("Hello")  # This wont work
 
-
+# While loops repeat code whilst a condition holds true.
+cars = 5
+while cars > 0:
+    print("Sell car")
+    cars = cars - 1
+# Like for loops, while loops also should contain colon : and be indented.
+# Best practice is to use for loops when we know the number of iterations,
+# and while loops for when there is a condition that needs to be met.
