@@ -250,3 +250,22 @@ print(car_brands[1:4]) # Prints from the [1] index (included) till the [4] index
 # Same works with a string
 name = "Jackson"
 print(name[0:4]) # Prints "Jack"
+#It's also possible to omit the start point, it will just start from the 0 index.
+print(name[:4]) # Prints "Jack"
+#It's also possible to omit the stop index, it will end at the last index.
+print(name[1:]) # Prints "ackson"
+
+# Python supports "indexing from the end", called negative indexing.
+# This means the last value of a sequence has an index of -1.
+bag = ["notebook", "pen", "food", "computer"]
+print(bag[-1]) # Prints "Computer", the last item in the list.
+print(bag[-2]) # Prints "food"
+c = ['$', '£', '€', '¥']
+print(c[-2:]) # Prints the last two items ['€', '¥']
+c = ['$', '£', '€', '¥']
+print(c[1:-1]) # Prints the two middle items ['£', '€'] because the indexes goes like this:
+# [-4(0), -3(1), -2(2) , -1(3)]
+# So it starts on the 1 index and ends on the -1 (3) index (exclusively)
+c = ['$', '£', '€', '¥']
+c[:2] = ['₣', '฿'] # Change the values of the two first items on list.
+print(c) # Prints ['₣', '฿', '€', '¥']
