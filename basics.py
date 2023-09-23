@@ -144,3 +144,13 @@ print(peak_rate) # prints False
 # Otherwise it will cause an error.
 b = (5 > 4) or False
 print(b) # prints True
+
+#for loop is used to execute the same instruction over and over again, a specific number of times.
+#range() creates 5 numbers in a sequence, starting from 0.
+for i in range(5):
+    print("Hello there")
+# The code that gets repeated in the for loop must be indented. Indentation is the spaces at the beginning of lines.
+# for i in range(5):
+# print("Hello")  # This wont work
+
+
