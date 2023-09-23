@@ -207,4 +207,25 @@ elif glucose_level > 140:
 else:
   print("Normal range")
 
-  # # ----------- Collections -----------
+# ----------- Collections -----------
+# Lists allow you to store a collection of multiple values in a single variable.
+# Lists can store any data type, and they can contain different types in same list.
+bag = ["notebook", "pen", "food", "computer"]
+prices = [2.99, 0.95, 4.5, 18.99]
+car_info = ["Pontiac", 1985, 5550.5]
+movies = [
+   "The Godfather",
+   "Fast & Furious",
+   "Scarface",
+   "Hobbs & Shaw"
+]
+print(movies)
+# To refer to a specific item in list, we use list index. It always starts with 0.
+print(movies[0])
+print(movies[2])
+# Also you can store a specific item in a new variable.
+my_fav_movie = movies[1]
+print(my_fav_movie)
+# It's also possible to change item's value in a list after it has been created.
+movies[3] = "8 Mile"
+print(movies[3])
