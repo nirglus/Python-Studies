@@ -162,9 +162,27 @@ while cars > 0:
 # Best practice is to use for loops when we know the number of iterations,
 # and while loops for when there is a condition that needs to be met.
 
-#Conditional statments, if-else allows the program to perform different actions based on the condition.
+# Conditional statments, if-else allows the program to perform different actions based on the condition.
 age = 15
 if age >= 18:
     print("Access allowed")
 else:
     print("Access denied")
+
+# You can use the elif statement (short for "else if") to check for more conditions if the first condition is not met.
+if age < 18: 
+  print("Junior discount")
+elif age >= 75: 
+  print("Senior discount")
+else:
+  print("No discount")
+
+# if-else statments can be nested in each other.
+is_student = True
+if age < 18:
+   if is_student:
+      print("30% discount")
+   else:
+      print("20% discount")  
+else:
+   print("Regular price")
