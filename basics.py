@@ -161,3 +161,10 @@ while cars > 0:
 # Like for loops, while loops also should contain colon : and be indented.
 # Best practice is to use for loops when we know the number of iterations,
 # and while loops for when there is a condition that needs to be met.
+
+#Conditional statments, if-else allows the program to perform different actions based on the condition.
+age = 15
+if age >= 18:
+    print("Access allowed")
+else:
+    print("Access denied")
