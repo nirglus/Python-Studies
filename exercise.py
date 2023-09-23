@@ -5,7 +5,9 @@ print("Hello", name, "!")
 
 # 2. Create a program that asks the user for their first name and a nickname, 
 # and then combines them to create a playful nickname. For instance, "Johnny the Rocket."
-
+first_name = input("Enter your first name:")
+nickname = input("Enter a nickname:")
+print(first_name, "the", nickname)
 
 # 3. Create a program that takes a user's full name and abbreviates it by displaying 
 # only the first letter of their first name followed by a period and their last name. 
