@@ -12,6 +12,10 @@ print(first_name, "the", nickname)
 # 3. Create a program that takes a user's full name and abbreviates it by displaying 
 # only the first letter of their first name followed by a period and their last name. 
 # For instance, "John Doe" becomes "J. Doe."
+first_name = input("Enter your first name:")
+last_name = input("Enter your last name:")
+print(first_name[0] + ".", last_name)
+
 
 # 4. Create a program that takes a user-entered word and displays the first and last characters of the word.
 
