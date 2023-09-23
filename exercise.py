@@ -1,4 +1,4 @@
-# ------- String exercises -------
+# ------- String & List exercises -------
 # 1. Create a program that asks the user for their name and then prints a greeting.
 name = input("Enter your name: ")
 print("Hello", name, "!")
@@ -33,4 +33,26 @@ url = input("Enter a url (starts with https:// or http://)")
 start_index = url.find("://") + 3
 domain = url[start_index :]
 print(domain)
+
+# 7. Initialize an empty list and add a series of names to the list. 
+# After each addition, display the current list and its length.
+
+# 8. Initialize a list of numbers and insert a new number at a specified position. 
+# Then, remove a number at a specific index and display the updated list.
+
+# 9. Initialize a list of names and capitalize the first letter of each name. 
+# Display the modified list.
+
+# 10. Initialize a string and convert it to all uppercase and all lowercase.
+
+# 11. Initialize an empty shopping list, add items to it, and remove items.
+
+
+
+
+
+
+
+
+
 
