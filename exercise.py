@@ -22,3 +22,7 @@ print("First letter:", user_word[0], "Last letter:", user_word[-1])
 
 # 5. Create a program that takes a user's first name and last name, and generates a username by 
 # taking the first three letters of the first name and the first three letters of the last name.
+first_name = input("Enter your first name: ")
+last_name = input("Enter your last name: ")
+username = first_name[:3] + last_name[:3]
+print(username)
