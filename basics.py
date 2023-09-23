@@ -145,6 +145,7 @@ print(peak_rate) # prints False
 b = (5 > 4) or False
 print(b) # prints True
 
+# ----------- for loop -----------
 #for loop is used to execute the same instruction over and over again, a specific number of times.
 #range() creates 5 numbers in a sequence, starting from 0.
 for i in range(5):
@@ -153,6 +154,7 @@ for i in range(5):
 # for i in range(5):
 # print("Hello")  # This wont work
 
+# ----------- while loop -----------
 # While loops repeat code whilst a condition holds true.
 cars = 5
 while cars > 0:
@@ -162,6 +164,7 @@ while cars > 0:
 # Best practice is to use for loops when we know the number of iterations,
 # and while loops for when there is a condition that needs to be met.
 
+# ----------- Conditional statements -----------
 # Conditional statments, if-else allows the program to perform different actions based on the condition.
 age = 15
 if age >= 18:
@@ -203,3 +206,5 @@ elif glucose_level > 140:
 # Display message if none of the conditions above are met
 else:
   print("Normal range")
+
+  # # ----------- Collections -----------
