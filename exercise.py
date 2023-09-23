@@ -26,3 +26,11 @@ first_name = input("Enter your first name: ")
 last_name = input("Enter your last name: ")
 username = first_name[:3] + last_name[:3]
 print(username)
+
+# 6. Write a program that extracts and prints the domain name from a URL. 
+# You can assume that the URL will always start with "http://" or "https://".
+url = input("Enter a url (starts with https:// or http://)")
+start_index = url.find("://") + 3
+domain = url[start_index :]
+print(domain)
+
