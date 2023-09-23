@@ -294,3 +294,29 @@ print("VOLKSWAGEN".capitalize()) # Prints "Volkswagen"
 "Ferrari".find("r") # Returns 2
 "Ferrari".find("ri") # Returns 5
 "Ferrari".find("o") # Returns -1
+
+# ----------- List Functions -----------
+# len() is one of the most useful built-in functions. 
+# len means length and it returns the number of items in a list.
+bands = ["Linkin Park", "AC/DC", "Beatles", "Arctic Monkeys"]
+len(bands) # Returns 4
+# len() can also be used on strings
+print(len("Metallica")) # Prints 9
+band = "Kiss"
+print(len(band)) # Prints 4
+print(len(bands[2])) # Prints the length of "Beatles" = 7
+
+# The append() function adds a new item to the end of a list. 
+# append() is called using dot notation because it’s specific to lists.
+bands.append("Coldplay")
+print(bands)
+
+# The insert() function allows you to add an element to a list, at a specific position.
+items = ["pen", "key", "notebook", "pencil"]
+items.insert(2 , "ruler") # Inserting "ruler" in the place of index 2 of items.
+print(items) # Prints ['pen', 'key', 'ruler', 'notebook', 'pencil']
+
+# The pop() function removes an element from a list.
+# That position indicated by the index is the only argument that the pop() function accepts.
+items.pop(2) # Removes the item with index 2
+print(items) # Prints ['pen', 'key', 'notebook', 'pencil'] NOTE: 'ruler' was removed.
