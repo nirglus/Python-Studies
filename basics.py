@@ -229,3 +229,24 @@ print(my_fav_movie)
 # It's also possible to change item's value in a list after it has been created.
 movies[3] = "8 Mile"
 print(movies[3])
+#Lists can store values of variables
+name = "Brian"
+age = 30
+country = "United Kingdom"
+info = [name, age, country]
+print(info) # prints the list with the variables values
+
+#Index also works with strings.
+car = "Volvo"
+print(car[2]) # prints 'l'
+
+# You can NOT change the characters in a string. If you try to do so, you'll get an error.
+computer = "Lenovo"
+computer[0] = "S" # returns error
+
+# Slicing allows you to extract a portion of a list. Starting and stopping indexes are separated by a colon : 
+car_brands = ["Mercedes", "BMW" , "Honda", "Ferrari", "Alfa Romeo", "Pagani"]
+print(car_brands[1:4]) # Prints from the [1] index (included) till the [4] index (excluded) 
+# Same works with a string
+name = "Jackson"
+print(name[0:4]) # Prints "Jack"
