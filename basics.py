@@ -276,3 +276,21 @@ print("Your seat:", 4)
 # NOTE: Two arguments in print func, printed with a space between them
 # print() accepts any type of arguments, range() accepts only integers
 # A function can be an argument for another function.
+
+# ----------- String Functions -----------
+# The functions upper() and lower() allow you to quickly change the case of a string
+# to all in uppercase or lowercase, respectively.
+print("VoLkSWaGeN".upper()) # Prints "VOLKSWAGEN"
+print("VoLkSWaGeN".lower()) # Prints "volkswagen"
+
+# capitalize() function converts the first character in a string to uppercase.
+print("volkswagen".capitalize()) # Prints "Volkswagen"
+print("VOLKSWAGEN".capitalize()) # Prints "Volkswagen"
+
+# The find() function checks if a character (or a pattern of characters) is present in a string.
+# find() returns the index of the given value, and if it appears more than once, the function will 
+# return the first occurrence.
+# find() will return -1 if the value can't be found in the string.
+"Ferrari".find("r") # Returns 2
+"Ferrari".find("ri") # Returns 5
+"Ferrari".find("o") # Returns -1
