@@ -125,6 +125,9 @@ while row <= 5:
     print("*" * row)
     row += 1
 
+# 18. Create a program that asks the user to enter a sentence and a word to search for.
+# Use a while loop and the find() method to count and print the number of times the word appears in the sentence.
+
 
 
 
