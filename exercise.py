@@ -60,6 +60,9 @@ for i in range(len(name_list)):
 print(name_list)
 
 # 10. Initialize a string and convert it to all uppercase and all lowercase.
+my_string = "Have a good weekend"
+print(my_string.upper())
+print(my_string.lower())
 
 # 11. Initialize an empty shopping list, add items to it, and remove items.
 
