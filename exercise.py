@@ -73,8 +73,20 @@ shop_list.append("Cups")
 for i in range(len(shop_list)):
     shop_list.pop(0)
     print(shop_list)
- 
+
  # 12. Initialize a list of numbers and calculate the sum and average of the numbers. Display both results.
+numbers_list = [5, 7, 2, 97, 23]
+sum = 0
+avg = 0
+list_range = len(numbers_list)
+for i in range(list_range):
+    sum = sum + numbers_list[i]
+    avg = sum / len(numbers_list)
+print("Sum of number:",sum,"Avarage:", avg)
+
+
+
+
 
  # 13. Initialize two strings and concatenate them to create a third string.
  # Display the concatenated string.
