@@ -36,6 +36,13 @@ print(domain)
 
 # 7. Initialize an empty list and add a series of names to the list. 
 # After each addition, display the current list and its length.
+new_list = []
+new_list.insert(0, "Jack")
+print(new_list, len(new_list))
+new_list.append("Alfonso")
+print(new_list, len(new_list))
+new_list.append("Michael")
+print(new_list, len(new_list))
 
 # 8. Initialize a list of numbers and insert a new number at a specified position. 
 # Then, remove a number at a specific index and display the updated list.
