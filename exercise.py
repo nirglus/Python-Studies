@@ -114,6 +114,16 @@ while user_pass != password:
     if user_pass == password:
        print("Access granted")
 
+# 17. Write a program that uses a while loop to print a pattern of asterisks like this:
+# *
+# **
+# ***
+# ****
+# *****
+
+
+
+
 
 
 
