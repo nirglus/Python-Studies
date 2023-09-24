@@ -65,6 +65,15 @@ print(my_string.upper())
 print(my_string.lower())
 
 # 11. Initialize an empty shopping list, add items to it, and remove items.
+shop_list = []
+shop_list.append("Milk")
+shop_list.append("Coffee")
+shop_list.append("Meat")
+shop_list.append("Cups")
+for i in range(len(shop_list)):
+    shop_list.pop(0)
+    print(shop_list)
+ 
 
 
 
