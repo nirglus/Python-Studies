@@ -52,9 +52,12 @@ print(num_list)
 num_list.pop(1)
 print(num_list)
 
-
 # 9. Initialize a list of names and capitalize the first letter of each name. 
 # Display the modified list.
+name_list = ["dan", "jack", "carl", "sean"]
+for i in range(len(name_list)):
+    name_list[i] = name_list[i].capitalize()
+print(name_list)
 
 # 10. Initialize a string and convert it to all uppercase and all lowercase.
 
