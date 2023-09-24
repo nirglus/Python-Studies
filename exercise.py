@@ -74,7 +74,7 @@ for i in range(len(shop_list)):
     shop_list.pop(0)
     print(shop_list)
 
- # 12. Initialize a list of numbers and calculate the sum and average of the numbers. Display both results.
+# 12. Initialize a list of numbers and calculate the sum and average of the numbers. Display both results.
 numbers_list = [5, 7, 2, 97, 23]
 sum = 0
 avg = 0
@@ -84,19 +84,19 @@ for i in range(list_range):
     avg = sum / len(numbers_list)
 print("Sum of number:",sum,"Avarage:", avg)
 
+# 13. Initialize two strings and concatenate them to create a third string.
+# Display the concatenated string.
+string1 = "Hello"
+string2 = "Mister"
+string3 = string1 + " " + string2
+print(string3)
 
+# 14. Initialize a list of names and sort them alphabetically. Display the sorted list.
 
+# 15. Create a program that calculates the sum of numbers from 1 to a user-specified number using a while loop.
 
-
- # 13. Initialize two strings and concatenate them to create a third string.
- # Display the concatenated string.
-
- # 14. Initialize a list of names and sort them alphabetically. Display the sorted list.
-
- # 15. Create a program that calculates the sum of numbers from 1 to a user-specified number using a while loop.
-
- # 16. Implement a program that asks the user to guess a password (e.g., "password123") and 
- # keeps asking until they enter the correct password.
+# 16. Implement a program that asks the user to guess a password (e.g., "password123") and 
+# keeps asking until they enter the correct password.
 
 
 
