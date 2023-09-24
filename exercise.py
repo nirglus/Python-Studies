@@ -105,9 +105,14 @@ while(i <= user_num):
     i = i + 1
 print(sum)
 
-
 # 16. Implement a program that asks the user to guess a password (e.g., "password123") and 
 # keeps asking until they enter the correct password.
+password = "ThisIsAPass"
+user_pass = input("Enter a password: ")
+while user_pass != password: 
+    user_pass = input("Wrong password, try again: ")
+    if user_pass == password:
+       print("Access granted")
 
 
 
