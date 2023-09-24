@@ -143,3 +143,9 @@ print("The word "+ word +" appears " + count + " times in the sentence.")
 
 # 19. Create a program that asks the user for a starting number and counts down from that number to 1 
 # using a while loop.
+start_num = int(input("Enter a starting number: "))
+
+while start_num >= 1:
+    print(start_num)
+    start_num -= 1
+
