@@ -127,7 +127,19 @@ while row <= 5:
 
 # 18. Create a program that asks the user to enter a sentence and a word to search for.
 # Use a while loop and the find() method to count and print the number of times the word appears in the sentence.
+sentence = input("Enter a sentence: ")
+word = input("Enter a word you want to search for: ")
+count = 0
+start_index = 0
 
+while True:
+    index = sentence.find(word, start_index)
+    if index == -1:
+        break
+    count += 1
+    start_index = index + len(word)
+
+print("The word "+ word +" appears " + count + " times in the sentence.")
 
 
 
