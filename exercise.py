@@ -46,6 +46,12 @@ print(new_list, len(new_list))
 
 # 8. Initialize a list of numbers and insert a new number at a specified position. 
 # Then, remove a number at a specific index and display the updated list.
+num_list = [2, 8, 4, 88, 9, 54]
+num_list.insert(-3, 69)
+print(num_list)
+num_list.pop(1)
+print(num_list)
+
 
 # 9. Initialize a list of names and capitalize the first letter of each name. 
 # Display the modified list.
