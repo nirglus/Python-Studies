@@ -92,6 +92,9 @@ string3 = string1 + " " + string2
 print(string3)
 
 # 14. Initialize a list of names and sort them alphabetically. Display the sorted list.
+names = ["Jack", "Melvin", "Neta", "Patrick", "Anna"]
+names.sort()
+print(names)
 
 # 15. Create a program that calculates the sum of numbers from 1 to a user-specified number using a while loop.
 
