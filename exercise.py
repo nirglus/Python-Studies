@@ -97,6 +97,14 @@ names.sort()
 print(names)
 
 # 15. Create a program that calculates the sum of numbers from 1 to a user-specified number using a while loop.
+user_num = int(input("Enter a number:"))
+i = 1
+sum = 0
+while(i <= user_num):
+    sum = sum + i
+    i = i + 1
+print(sum)
+
 
 # 16. Implement a program that asks the user to guess a password (e.g., "password123") and 
 # keeps asking until they enter the correct password.
