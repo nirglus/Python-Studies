@@ -161,5 +161,10 @@ print("Sum of even numbers from 1 to 50:", sum_even)
 # 21. Implement a program that checks if a year entered by the user is a 
 # leap year or not.
 
+# 22. Write a program that asks the user for an integer and determines 
+# whether it's even or odd.
+
+
+
 
 
