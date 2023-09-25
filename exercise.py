@@ -166,9 +166,14 @@ if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
 else:
     print("It's not a leap year.")
 
-
 # 22. Write a program that asks the user for an integer and determines 
 # whether it's even or odd.
+num = int(input("Enter an integer: "))
+if num % 2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
+
 
 
 
