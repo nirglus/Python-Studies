@@ -320,3 +320,26 @@ print(items) # Prints ['pen', 'key', 'ruler', 'notebook', 'pencil']
 # That position indicated by the index is the only argument that the pop() function accepts.
 items.pop(2) # Removes the item with index 2
 print(items) # Prints ['pen', 'key', 'notebook', 'pencil'] NOTE: 'ruler' was removed.
+
+#----------- Custom Functions -----------
+# Use def followed by a name to define a new function
+# The body of a function contains the reusable code that is executed when the function is called.
+# The code for the body of a function must be indented.
+# When a function is defined, you need to make sure parentheses () are added after the name. 
+# A colon : must be added at the end of the definition line.
+def greet(): 
+  print("Hello from a function")
+  print("Have a great day")
+greet()
+# A function might require arguments to complete its tasks. 
+# Arguments are put inside the parentheses () following the function name.
+def personal_greet(name): 
+  print("Hello", name)
+  print("Have a great day")
+personal_greet("Anna")
+# NOTE: Functions must be defined before they can be called. 
+# The result of a function can be sent back with the return statement. 
+# This is particularly helpful when you need to continue using the result value in your program.
+def bmi(weight, height):
+    index = weight / (height * height)
+    return index
