@@ -157,5 +157,9 @@ while num <= 50:
     num += 2 
 
 print("Sum of even numbers from 1 to 50:", sum_even)
-    
+
+# 21. Implement a program that checks if a year entered by the user is a 
+# leap year or not.
+
+
 
