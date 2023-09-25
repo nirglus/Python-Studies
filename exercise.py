@@ -149,3 +149,7 @@ while start_num >= 1:
     print(start_num)
     start_num -= 1
 
+# 20. Write a program that calculates the sum of all even numbers from 1 to 50 using a while loop.
+
+    
+
