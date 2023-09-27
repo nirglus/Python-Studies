@@ -343,3 +343,24 @@ personal_greet("Anna")
 def bmi(weight, height):
     index = weight / (height * height)
     return index
+#  function can return multiple values.
+def rect(length, width):
+  area = length * width
+  perimeter = 2 * length + 2 * width
+  return area, perimeter
+# When a function returns multiple values, they can be stored in multiple variables.
+a,b = rect(50, 100)
+# You can create mulitple variables in 1 statement.
+x, y = 4, 9
+print(x, y)
+# Python allows function arguments to have default values. 
+# If the function is called without the argument,
+#  the argument gets its default value
+def greet(name="Guest"):
+  print("Welcome", name)
+
+greet() # Welcome Guest
+greet("John") # Welcome John
+#NOTE A function can return multiple values
+#NOTE Defining a function also decides the data types it can take in, handle and return
+#NOTE Default values make arguments optional
