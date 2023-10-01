@@ -388,3 +388,30 @@ car = {
 }
 def getValue(key):
     print(car[key])
+
+# Dictionary Functions
+# To determine whether a key is in a dictionary, you can use in and not in,
+# just as you can for a list.
+nums = {
+  1: "one",
+  2: "two",
+  3: "three",
+}
+print(1 in nums) # prints True
+print("three" in nums) # prints False
+print(4 not in nums) # prints True
+
+# A useful dictionary function is get. It does the same thing as indexing, but if 
+# the key is not found in the dictionary it returns another specified value instead.
+pairs = {
+   1: "apple",
+   "orange": [2, 3, 4], 
+   True: False, 
+   12: "True",
+}
+
+print(pairs.get("orange")) # prints [2, 3, 4]
+print(pairs.get(7, 42)) # prints 42
+print(pairs.get(12345, "not found")) # prints not found
+# When using the get() method with a dictionary, you can specify a default value
+# to be returned if the key you're looking for is not found in the dictionary.
