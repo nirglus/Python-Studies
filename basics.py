@@ -364,3 +364,17 @@ greet("John") # Welcome John
 #NOTE A function can return multiple values
 #NOTE Defining a function also decides the data types it can take in, handle and return
 #NOTE Default values make arguments optional
+
+# Dictionaries
+# Python provides a number of built-in collection types, to store multiple values.
+# Like lists, Dictionaries are another collection type and allow you to map arbitrary keys to values.
+# Dictionaries can be indexed in the same way as lists, using square brackets containing keys.
+ages = {
+   "Sophie": 24,
+   "Jonas": 32,
+   "Enrique": 57
+}
+print(ages["Sophie"]) # prints 24
+print(ages["Enrique"]) # prints 57
+# Each element in a dictionary is represented by a key:value pair.
+
