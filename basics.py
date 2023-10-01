@@ -378,3 +378,13 @@ print(ages["Sophie"]) # prints 24
 print(ages["Enrique"]) # prints 57
 # Each element in a dictionary is represented by a key:value pair.
 
+# ----------- Task -------------
+# Your program needs to take the key as input and output the corresponding value.
+car = {
+    'brand':'BMW',
+    'year': 2018,
+    'color': 'red',
+    'mileage': 15000
+}
+def getValue(key):
+    print(car[key])
