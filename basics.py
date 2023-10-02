@@ -389,7 +389,7 @@ car = {
 def getValue(key):
     print(car[key])
 
-# Dictionary Functions
+# ---------- Dictionary Functions ------------
 # To determine whether a key is in a dictionary, you can use in and not in,
 # just as you can for a list.
 nums = {
@@ -415,3 +415,18 @@ print(pairs.get(7, 42)) # prints 42
 print(pairs.get(12345, "not found")) # prints not found
 # When using the get() method with a dictionary, you can specify a default value
 # to be returned if the key you're looking for is not found in the dictionary.
+
+# ---------- Tuples -----------
+# Tuples are very similar to lists, except that they are immutable 
+# (they cannot be changed).
+# Also, they are created using parentheses, rather than square brackets.
+words = ("spam", "eggs", "sausages")
+print(words[2]) # prints "sausages"
+
+# Tuples can be created without the parentheses by just 
+# separating the values with commas.
+my_tuple = "one", "two", "three"
+print(my_tuple[0]) # prints "one"
+
+tuple = (1, (1, 2, 3))
+print(tuple[1])
