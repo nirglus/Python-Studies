@@ -174,6 +174,8 @@ if num % 2 == 0:
 else:
     print("The number is odd.")
 
+# 23. Create a tuple representing a 2D point (x, y) 
+# and use tuple unpacking to extract and print the values of x and y.
 
 
 
