@@ -181,6 +181,9 @@ else:
 
 # 24. Combine two tuples into a single tuple, and then print the resulting tuple.
 
+# 25. Create a tuple of numbers from 1 to 10, and use slicing to print the numbers
+#  from the 3rd to the 7th position.
+
 
 
 
