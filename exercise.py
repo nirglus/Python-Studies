@@ -187,6 +187,9 @@ else:
 # 26. Create a tuple of the first and last names of a person. Then,
 #  use tuple packing and unpacking to assign these values to separate variables.
 
+# 27. Create a tuple of your favorite programming languages and use the len() function 
+# to find and print the length of the tuple.
+
 
 
 
