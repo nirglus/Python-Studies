@@ -188,9 +188,11 @@ first_tuple = (3, 5)
 second_tuple = (6, 8)
 mix = first_tuple + second_tuple
 print(mix)
+
 # 25. Create a tuple of numbers from 1 to 10, and use slicing to print the numbers
 #  from the 3rd to the 7th position.
-
+numbers = tuple(range(1, 11))
+print(numbers[2:7])
 # 26. Create a tuple of the first and last names of a person. Then,
 #  use tuple packing and unpacking to assign these values to separate variables.
 
