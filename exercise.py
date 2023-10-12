@@ -178,6 +178,10 @@ else:
 
 # 23. Create a tuple representing a 2D point (x, y) 
 # and use tuple unpacking to extract and print the values of x and y.
+point = (2, 6)
+x, y = point
+print("x:",x)
+print("y:",y)
 
 # 24. Combine two tuples into a single tuple, and then print the resulting tuple.
 
