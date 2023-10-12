@@ -184,7 +184,10 @@ print("x:",x)
 print("y:",y)
 
 # 24. Combine two tuples into a single tuple, and then print the resulting tuple.
-
+first_tuple = (3, 5)
+second_tuple = (6, 8)
+mix = first_tuple + second_tuple
+print(mix)
 # 25. Create a tuple of numbers from 1 to 10, and use slicing to print the numbers
 #  from the 3rd to the 7th position.
 
