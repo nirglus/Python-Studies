@@ -195,6 +195,11 @@ numbers = tuple(range(1, 11))
 print(numbers[2:7])
 # 26. Create a tuple of the first and last names of a person. Then,
 #  use tuple packing and unpacking to assign these values to separate variables.
+person = ("Mister", "Fister")
+f_name = person[0]
+l_name = person[1]
+print(f_name)
+print(l_name)
 
 # 27. Create a tuple of your favorite programming languages and use the len() function 
 # to find and print the length of the tuple.
