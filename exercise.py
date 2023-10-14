@@ -203,6 +203,8 @@ print(l_name)
 
 # 27. Create a tuple of your favorite programming languages and use the len() function 
 # to find and print the length of the tuple.
+langs = ("JavaScript", "Python", "Java", "C#", "C++")
+print(len(langs))
 
 
 
