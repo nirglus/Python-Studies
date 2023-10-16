@@ -449,3 +449,10 @@ Sample Output
 John is 31
 If the contact is not found, the program should output "Not Found".
 """
+contacts = [
+    ('James', 42),
+    ('Amy', 24),
+    ('John', 31),
+    ('Amanda', 63),
+    ('Bob', 18)
+]
