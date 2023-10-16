@@ -434,3 +434,18 @@ print(tuple[1])
 # To create a one item tuple, add a comma after the item:
 one_item_tuple = ("item" ,) # without comma it's a string
 print(type(one_item_tuple)) # prints Tuple
+
+# ----------- Task ----------
+""" 
+You are given a list of contacts, where each contact is represented by a tuple, 
+with the name and age of the contact.
+Complete the program to get a string as input, 
+search for the name in the list of contacts and output the age of the contact in the format presented below:
+
+Sample Input
+John
+
+Sample Output
+John is 31
+If the contact is not found, the program should output "Not Found".
+"""
