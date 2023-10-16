@@ -456,3 +456,11 @@ contacts = [
     ('Amanda', 63),
     ('Bob', 18)
 ]
+def check_name(name, contacts):
+    for i in contacts:
+        if name == i[0]:
+            name = name + " is "  + str(i[1])
+            return name
+    return "Not Found"        
+    
+print(check_name(input(), contacts))
