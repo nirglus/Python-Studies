@@ -430,3 +430,7 @@ print(my_tuple[0]) # prints "one"
 
 tuple = (1, (1, 2, 3))
 print(tuple[1])
+
+# To create a one item tuple, add a comma after the item:
+one_item_tuple = ("item" ,) # without comma it's a string
+print(type(one_item_tuple)) # prints Tuple
