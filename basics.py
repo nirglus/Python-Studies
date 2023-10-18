@@ -517,3 +517,14 @@ print(first - second) #! prints {1, 2, 3}
 print(second - first) #! prints {7, 8, 9}
 print(first ^ second) #! prints {1, 2, 3, 7, 8, 9}
 
+#! ----------- List Comprehensions -----------
+# List comprehensions are a useful way of quickly creating lists whose contents obey a rule.
+cubes = [i**3 for i in range(5)]
+print(cubes) #! prints [0, 1, 8, 27, 64]
+# List comprehensions are inspired by set-builder notation in mathematics.
+# A list comprehension can also contain an if statement to enforce a condition on values in the list.
+evens=[i**2 for i in range(10) if i**2 % 2 == 0]
+print(evens) #! prints [0, 4, 16, 36, 64]
+# evens is a list created by a list comprehension. For every item in the range of 0 to 9, the item is squared. 
+# However, we only add that item to the list if the item to the power of 2 
+# (squared item) divided by 2 has a remainder of 0.
