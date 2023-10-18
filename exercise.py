@@ -239,6 +239,13 @@ print("The max number is:", max_result)
 #! ------------ Sets exercise -------------  
 # 32. Create two sets of your favorite colors and perform basic set operations, such as union, 
 # intersection, and difference.
+first_set = {"black", "brown", "red"}
+second_set = {"green", "blue", "red", "grey"}
+print(first_set | second_set) #! union - prints {'red', 'green', 'blue', 'brown', 'black', 'grey'}
+print(first_set & second_set) #! intersection - prints 'red'
+print(first_set - second_set) #! difference - prints {'brwon', 'black}
+print(second_set - first_set) #! difference - prints {'blue', 'green', 'grey'}
+print(first_set ^ second_set) #! symetric difference - prints {'blue', 'brown', 'black', 'green', 'grey'}
 
 # 33. Create a set of programming languages. 
 # Then, check if a specific language is in the set, and find the number of languages in the set.
