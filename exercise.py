@@ -214,6 +214,11 @@ x, y = y, x
 print(x, y)
 
 # 29. Create a function that takes two numbers as input and returns their sum and product using tuple unpacking.
+def sum_product(x, y):
+    return x + y, x * y
+result_sum, result_product = sum_product(5, 8)
+print("The sum is:", result_sum)
+print("The product is:", result_product) 
 
 # 30. Initialize a tuple with three values (e.g., a point in 3D space). Then, use tuple unpacking to assign 
 # these values to three separate variables representing the x, y, and z coordinates.
