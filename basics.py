@@ -31,7 +31,7 @@ score = 50
 print(username)
 print(score)
 
-# ------- Task -------
+#! ------- Task -------
 #Fix the bugs to show the following result on the screen
 #name = Anna
 #score -> 96
@@ -63,7 +63,7 @@ print(message)
 #The input() always turns the user input to a string, even if it's a number.
 #The print() instruction is used to generate an output.
 
-#-----Data Types ------
+#! ----- Data Types ------
 # Strings - surrounded by " " or ' '
 # Integers - whole numbers without a decimal point. They can be positive, negative or zero. 
 # Float - data type for numbers with decimal places, they can be positive or negative.
@@ -106,7 +106,7 @@ print(b) # prints "5.2"
 # Explicit conversions are conversions done by us with str(), float(), int().
 # Implicit (automatic) conversions are done by by the system engine.
 
-# --------- Task ----------
+#! --------- Task ----------
 #Complete the code to take the savings, calculate the end amount, then display a message on the screen
 
 # Asks the user to enter the savings
@@ -127,7 +127,7 @@ message = "Amount in 1 year: " + balance
 # Display the message
 print(message)
 
-# ------- Comparisons -------
+#! ------- Comparisons -------
 print(20 > 84)
 print(30 < 65)
 print(40 == 40)
@@ -145,7 +145,7 @@ print(peak_rate) # prints False
 b = (5 > 4) or False
 print(b) # prints True
 
-# ----------- for loop -----------
+#! ----------- for loop -----------
 #for loop is used to execute the same instruction over and over again, a specific number of times.
 #range() function creates 5 numbers in a sequence, starting from 0.
 for i in range(5):
@@ -154,7 +154,7 @@ for i in range(5):
 # for i in range(5):
 # print("Hello")  # This wont work
 
-# ----------- while loop -----------
+#! ----------- while loop -----------
 # While loops repeat code whilst a condition holds true.
 cars = 5
 while cars > 0:
@@ -164,7 +164,7 @@ while cars > 0:
 # Best practice is to use for loops when we know the number of iterations,
 # and while loops for when there is a condition that needs to be met.
 
-# ----------- Conditional statements -----------
+#! ----------- Conditional statements -----------
 # Conditional statments, if-else allows the program to perform different actions based on the condition.
 age = 15
 if age >= 18:
@@ -190,7 +190,7 @@ if age < 18:
 else:
    print("Regular price")
 
-# -------- Task ---------
+#! -------- Task ---------
 # Complete the given code to display different messages to the patient based on the blood sugar levels
 # Glucose level is an input for this software
 glucose_level = int(input())
@@ -207,7 +207,7 @@ elif glucose_level > 140:
 else:
   print("Normal range")
 
-# ----------- Collections -----------
+#! ----------- Collections -----------
 # Lists allow you to store a collection of multiple values in a single variable.
 # Lists can store any data type, and they can contain different types in same list.
 bag = ["notebook", "pen", "food", "computer"]
@@ -270,14 +270,14 @@ c = ['$', '£', '€', '¥']
 c[:2] = ['₣', '฿'] # Change the values of the two first items on list.
 print(c) # Prints ['₣', '฿', '€', '¥']
 
-# ----------- Functions -----------
+#! ----------- Functions -----------
 # Functions perform tasks, we saw already print(), type() and input().
 print("Your seat:", 4)
 # NOTE: Two arguments in print func, printed with a space between them
 # print() accepts any type of arguments, range() accepts only integers
 # A function can be an argument for another function.
 
-# ----------- String Functions -----------
+#! ----------- String Functions -----------
 # The functions upper() and lower() allow you to quickly change the case of a string
 # to all in uppercase or lowercase, respectively.
 print("VoLkSWaGeN".upper()) # Prints "VOLKSWAGEN"
@@ -295,7 +295,7 @@ print("VOLKSWAGEN".capitalize()) # Prints "Volkswagen"
 "Ferrari".find("ri") # Returns 5
 "Ferrari".find("o") # Returns -1
 
-# ----------- List Functions -----------
+#! ----------- List Functions -----------
 # len() is one of the most useful built-in functions. 
 # len means length and it returns the number of items in a list.
 bands = ["Linkin Park", "AC/DC", "Beatles", "Arctic Monkeys"]
@@ -321,7 +321,7 @@ print(items) # Prints ['pen', 'key', 'ruler', 'notebook', 'pencil']
 items.pop(2) # Removes the item with index 2
 print(items) # Prints ['pen', 'key', 'notebook', 'pencil'] NOTE: 'ruler' was removed.
 
-#----------- Custom Functions -----------
+#! ----------- Custom Functions -----------
 # Use def followed by a name to define a new function
 # The body of a function contains the reusable code that is executed when the function is called.
 # The code for the body of a function must be indented.
@@ -378,7 +378,7 @@ print(ages["Sophie"]) # prints 24
 print(ages["Enrique"]) # prints 57
 # Each element in a dictionary is represented by a key:value pair.
 
-# ----------- Task -------------
+#! ----------- Task -------------
 # Your program needs to take the key as input and output the corresponding value.
 car = {
     'brand':'BMW',
@@ -389,7 +389,7 @@ car = {
 def getValue(key):
     print(car[key])
 
-# ---------- Dictionary Functions ------------
+#! ---------- Dictionary Functions ------------
 # To determine whether a key is in a dictionary, you can use in and not in,
 # just as you can for a list.
 nums = {
@@ -416,7 +416,7 @@ print(pairs.get(12345, "not found")) # prints not found
 # When using the get() method with a dictionary, you can specify a default value
 # to be returned if the key you're looking for is not found in the dictionary.
 
-# ---------- Tuples -----------
+#! ---------- Tuples -----------
 # Tuples are very similar to lists, except that they are immutable 
 # (they cannot be changed).
 # Also, they are created using parentheses, rather than square brackets.
@@ -435,7 +435,7 @@ print(tuple[1])
 one_item_tuple = ("item" ,) # without comma it's a string
 print(type(one_item_tuple)) # prints Tuple
 
-# ----------- Task ----------
+#! ----------- Task ----------
 """ 
 You are given a list of contacts, where each contact is represented by a tuple, 
 with the name and age of the contact.
@@ -465,7 +465,7 @@ def check_name(name, contacts):
     
 print(check_name(input(), contacts))
 
-#----------- Tuple Unpacking -----------
+#! ----------- Tuple Unpacking -----------
 # Tuple unpacking allows you to assign each item in a collection to a variable.
 
 numbers = (1, 2, 3)
@@ -484,3 +484,37 @@ print(a) # prints 1
 print(b) # prints 2
 print(c) # prints all values from 3 to 8
 print(d) # prints 9
+
+#! ----------- Sets -----------
+# Sets are similar to lists or dictionaries.
+# They are created using curly braces, and are unordered, which means that they can't be indexed.
+# Due to the way they're stored, it's faster to check whether an item is part of a set using the in operator, 
+# rather than part of a list.
+num_set = {1, 2, 3, 4, 5, 6}
+print(3 in num_set) # prints True
+#! Sets cannot contain duplicate elements.
+# You can use the add() function to add new items to the set, and remove() to delete a specific element:
+nums = {1, 2, 2, 3, 2, 4, 5, 6}
+print(nums)
+nums.add(-8)
+nums.remove(3)
+print(nums)
+print(len(nums))
+#! Duplicate elements will automatically get removed from the set.
+# The len() function can be used to return the number of elements of a set.
+"""
+Sets can be combined using mathematical operations.
+The union operator | combines two sets to form a new one containing items in either.
+The intersection operator & gets items only in both.
+The difference operator - gets items in the first set but not in the second.
+The symmetric difference operator ^ gets items in either set, but not both. """
+first = {1, 2, 3, 4, 5, 6}
+second = {4, 5, 6, 7, 8, 9}
+
+print(first | second) #! prints {1, 2, 3, 4, 5, 6, 7, 8, 9}
+print(first & second) #! prints {4 ,5, 6}
+print(first - second) #! prints {1, 2, 3}
+print(second - first) #! prints {7, 8, 9}
+print(first ^ second) #! prints {1, 2, 3, 7, 8, 9}
+
+
