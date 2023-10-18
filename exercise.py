@@ -174,7 +174,7 @@ if num % 2 == 0:
 else:
     print("The number is odd.")
 
-# ------------ Tuple exercise -------------    
+#! ------------ Tuple exercise -------------    
 
 # 23. Create a tuple representing a 2D point (x, y) 
 # and use tuple unpacking to extract and print the values of x and y.
@@ -206,7 +206,7 @@ print(l_name)
 langs = ("JavaScript", "Python", "Java", "C#", "C++")
 print(len(langs))
 
-# ------------ Tuple Unpacking exercise -------------    
+#! ------------ Tuple Unpacking exercise -------------    
 
 # 28. Write a program that swaps the values of two variables using tuple unpacking.
 x, y = 1, 2
@@ -235,6 +235,10 @@ num_list = [2, 9, 34, 89, 5, 1, 45]
 min_result, max_result = min_max(num_list)
 print("The min number is:", min_result)
 print("The max number is:", max_result)
+
+#! ------------ Sets exercise -------------  
+# 32. Create two sets of your favorite colors and perform basic set operations, such as union, 
+# intersection, and difference.
 
 
 
