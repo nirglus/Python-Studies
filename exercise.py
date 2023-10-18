@@ -209,8 +209,14 @@ print(len(langs))
 # ------------ Tuple Unpacking exercise -------------    
 
 # 28. Write a program that swaps the values of two variables using tuple unpacking.
+x, y = 1, 2
+x, y = y, x
+print(x, y)
 
 # 29. Create a function that takes two numbers as input and returns their sum and product using tuple unpacking.
+
+# 30. Initialize a tuple with three values (e.g., a point in 3D space). Then, use tuple unpacking to assign 
+# these values to three separate variables representing the x, y, and z coordinates.
 
 
 
