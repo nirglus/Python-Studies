@@ -229,7 +229,12 @@ print("Y coordinate:", y)
 print("Z coordinate:", z)
 
 # 31. Write a function that takes a list of numbers and returns the minimum and maximum values using tuple unpacking.
-
+def min_max(list):
+    return min(list), max(list)
+num_list = [2, 9, 34, 89, 5, 1, 45]
+min_result, max_result = min_max(num_list)
+print("The min number is:", min_result)
+print("The max number is:", max_result)
 
 
 
