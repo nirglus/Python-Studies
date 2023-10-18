@@ -222,6 +222,11 @@ print("The product is:", result_product)
 
 # 30. Initialize a tuple with three values (e.g., a point in 3D space). Then, use tuple unpacking to assign 
 # these values to three separate variables representing the x, y, and z coordinates.
+point = (1, 8, 20)
+x, y, z = point
+print("X coordiante:",x)
+print("Y coordinate:", y)
+print("Z coordinate:", z)
 
 
 
