@@ -243,6 +243,8 @@ print("The max number is:", max_result)
 # 33. Create a set of programming languages. 
 # Then, check if a specific language is in the set, and find the number of languages in the set.
 
+# 34. Create an empty set for groceries. 
+# Add items to the set, and then remove items using the add() and remove() methods.
 
 
 
