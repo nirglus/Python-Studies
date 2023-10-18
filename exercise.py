@@ -240,6 +240,9 @@ print("The max number is:", max_result)
 # 32. Create two sets of your favorite colors and perform basic set operations, such as union, 
 # intersection, and difference.
 
+# 33. Create a set of programming languages. 
+# Then, check if a specific language is in the set, and find the number of languages in the set.
+
 
 
 
