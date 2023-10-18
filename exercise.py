@@ -228,6 +228,8 @@ print("X coordiante:",x)
 print("Y coordinate:", y)
 print("Z coordinate:", z)
 
+# 31. Write a function that takes a list of numbers and returns the minimum and maximum values using tuple unpacking.
+
 
 
 
