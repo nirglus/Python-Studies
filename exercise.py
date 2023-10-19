@@ -264,5 +264,22 @@ print(groceries)
 groceries.remove("milk")
 print(groceries)
 
+#! ------------ Lambda, map and filter exercise ------------- 
+# 1. Use map() and a lambda function to square each number in a list of integers
+#  and create a new list with the squared values.
 
+# 2. Given a list of words, use map() and a lambda function to capitalize the first letter of each word.
+words = ["apple", "banana", "cherry", "date"]
 
+# 3. Create a list of strings and use map() and a lambda function to reverse each string in the list.
+
+# 4. Given a list of integers, use filter() and a lambda function 
+# to create a new list containing only the even numbers.
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# 5. Create a list of names and use filter() and a lambda function to create a new list 
+# with names that contain the letter 'a'.
+
+# 6. Given a list of words, use filter() and a lambda function to create a new list 
+# with words that have a length of 6 or more characters.
+words = ["apple", "banana", "cherry", "date", "elephant", "grape"]
