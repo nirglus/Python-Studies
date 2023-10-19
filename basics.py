@@ -546,4 +546,55 @@ print(evens) #! prints [0, 4, 16, 36, 64]
 #! Many times, a tuple is used in combination with a dictionary, 
 #! for example, a tuple might represent a key, because it's immutable.
 nums = (55, 44, 33, 22)
-print(max(min(nums[:2]), abs(-42)))
+print(max(min(nums[:2]), abs(-42))) # prints 44
+
+#! ----------- Functional Programming -----------
+# Functional programming is a style of programming that 
+# (as the name suggests) is based around functions.
+# A key part of functional programming is higher-order functions. 
+# Higher-order functions take other functions as arguments, or return them as results.
+def apply_twice(func, arg):
+   return func(func(arg))
+
+def add_five(x):
+   return x + 5
+
+print(apply_twice(add_five, 10)) # prints 20
+# The function apply_twice takes another function as its argument, and calls it twice inside its body.
+
+# In Python, and in programming in general, functions are categorized as either pure or impure based 
+# on their behavior.
+# Pure Functions:
+#! Pure Functions
+#!  - A pure function is a function that always returns the same output for the same input.
+#!  - It doesn't have any side effects, meaning it doesn't modify any external state or variables.
+#!  - Pure functions are predictable and easy to test because they don't rely on external factors.
+#!  - They are ideal for functional programming paradigms.
+#!  - Examples of pure functions in Python include mathematical operations, string manipulation, and functions that only use their input parameters.
+   
+#!  Impure Function
+
+#! - An impure function is a function that can produce different outputs for the same input or has side effects.
+#! - Side effects can include modifying global variables, printing to the console, or performing I/O operations.
+#! - Impure functions might depend on external state that can change.
+#! - They are less predictable and harder to test in isolation.
+#! - Many real-world functions, such as those interacting with databases or user interfaces, are impure.
+# ------------ Example ------------
+# Pure Function
+def add(a, b):
+    return a + b
+
+# Impure Function
+total = 0  # External state
+
+def add_to_total(value):
+    global total  # Modifies an external variable
+    total += value
+
+# Pure functions are called with the same arguments and produce the same results.
+result1 = add(2, 3)  # Result is always 5
+result2 = add(2, 3)  # Result is still 5
+
+# Impure functions can have side effects and might produce different results.
+add_to_total(5)  # Modifies 'total' variable
+add_to_total(3)  # Modifies 'total' variable differently
