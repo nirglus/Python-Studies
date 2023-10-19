@@ -249,6 +249,12 @@ print(first_set ^ second_set) #! symetric difference - prints {'blue', 'brown', 
 
 # 33. Create a set of programming languages. 
 # Then, check if a specific language is in the set, and find the number of languages in the set.
+langs = {"Python", "JS", "Java", "C", "C++", "Pascal"}
+lang_to_check = "JS"
+if lang_to_check in langs:
+    print(f"{lang_to_check} is in the set")
+set_length = len(langs)
+print(f"Number of programming languages in the set is{set_length}")    
 
 # 34. Create an empty set for groceries. 
 # Add items to the set, and then remove items using the add() and remove() methods.
