@@ -528,3 +528,22 @@ print(evens) #! prints [0, 4, 16, 36, 64]
 # evens is a list created by a list comprehension. For every item in the range of 0 to 9, the item is squared. 
 # However, we only add that item to the list if the item to the power of 2 
 # (squared item) divided by 2 has a remainder of 0.
+
+#! ----------- Data Types Conclusion -----------
+# Python supports the following collection types: Lists, Dictionaries, Tuples, Sets.
+
+#! When to use a dictionary:
+# - When you need a logical association between a key:value pair.
+# - When you need fast lookup for your data, based on a custom key.
+# - When your data is being constantly modified. Remember, dictionaries are mutable.
+
+#! When to use the other types:
+# - Use lists if you have a collection of data that does not need random access. 
+# Try to choose lists when you need a simple, iterable collection that is modified frequently.
+# - Use a set if you need uniqueness for the elements.
+# - Use tuples when your data cannot/should not change.
+
+#! Many times, a tuple is used in combination with a dictionary, 
+#! for example, a tuple might represent a key, because it's immutable.
+nums = (55, 44, 33, 22)
+print(max(min(nums[:2]), abs(-42)))
