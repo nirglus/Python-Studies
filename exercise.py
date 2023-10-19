@@ -258,7 +258,11 @@ print(f"Number of programming languages in the set is{set_length}")
 
 # 34. Create an empty set for groceries. 
 # Add items to the set, and then remove items using the add() and remove() methods.
-
+groceries = {"milk", "tea", "bread", "butter", "cheese"}
+groceries.add("meat")
+print(groceries)
+groceries.remove("milk")
+print(groceries)
 
 
 
