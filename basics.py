@@ -617,3 +617,25 @@ result2 = add(2, 3)  # Result is still 5
 # Impure functions can have side effects and might produce different results.
 add_to_total(5)  # Modifies 'total' variable
 add_to_total(3)  # Modifies 'total' variable differently
+
+#! ----------- Lambda -----------
+# Lambda functions in Python are small, anonymous functions used for simple tasks. 
+# They are created with the lambda keyword, typically for one-line operations, 
+# and often used in functional programming constructs like map, filter, and reduce. 
+# They are best suited for short, single-expression tasks.
+# ------------ Example ------------
+
+# Regular function
+def add(x, y):
+    return x + y
+
+# Equivalent lambda function
+add_lambda = lambda x, y: x + y
+
+result = add(3, 5)
+result_lambda = add_lambda(3, 5)
+
+print(result)         # Output: 8
+print(result_lambda)  # Output: 8
+
+
