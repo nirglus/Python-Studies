@@ -284,6 +284,8 @@ print("Reversed Strings:", reversed_strings)
 # 4. Given a list of integers, use filter() and a lambda function 
 # to create a new list containing only the even numbers.
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+evens = list(filter(lambda x: x%2==0, numbers))
+print(evens)
 
 # 5. Create a list of names and use filter() and a lambda function to create a new list 
 # with names that contain the letter 'a'.
