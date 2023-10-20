@@ -302,3 +302,6 @@ print("Words with 6 chars or more:", long_words)
 #! ------------ Generator exercise ------------- 
 # 1. Write a generator function that yields numbers from 1 to n.
 #  Test the generator by iterating over it and printing the numbers.
+
+# 2. Create a generator function to generate the Fibonacci sequence up to a given limit. 
+# The generator should yield Fibonacci numbers one by one.
