@@ -298,3 +298,7 @@ print("Names with 'a':" ,a_names)
 words = ["apple", "banana", "cherry", "date", "elephant", "grape"]
 long_words = list(filter(lambda x: len(x) >= 6, words))
 print("Words with 6 chars or more:", long_words)
+
+#! ------------ Generator exercise ------------- 
+# 1. Write a generator function that yields numbers from 1 to n.
+#  Test the generator by iterating over it and printing the numbers.
