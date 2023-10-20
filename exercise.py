@@ -289,6 +289,9 @@ print(evens)
 
 # 5. Create a list of names and use filter() and a lambda function to create a new list 
 # with names that contain the letter 'a'.
+names = ["John", "Amanda", "Anna", "Drake", "Joe", "Albert", "Angela"]
+a_names = list(filter(lambda x: "a" in x.lower(), names))
+print("Names with 'a':" ,a_names)
 
 # 6. Given a list of words, use filter() and a lambda function to create a new list 
 # with words that have a length of 6 or more characters.
