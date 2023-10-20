@@ -666,3 +666,32 @@ nums = [11, 22, 33, 44, 55]
 res = list(filter(lambda x: x%2==0, nums))
 print(res) # prints [22, 44]
 # Like map, the result has to be explicitly converted to a list if you want to print it.
+
+#! ----------- Generators -----------
+# Generators are a type of iterable, like lists or tuples.
+# Unlike lists, they don't allow indexing with arbitrary indices, 
+# but they can still be iterated through with for loops.
+# They can be created using functions and the yield statement.
+def countdown():
+  i=5
+  while i > 0:
+    yield i
+    i -= 1
+    
+for i in countdown():
+  print(i)
+
+# The yield statement is used to define a generator, 
+# replacing the return of a function to provide a result to its caller without destroying local variables. 
+
+# Finite generators can be converted into lists by passing them as arguments to the list function.
+def numbers(x):
+  for i in range(x):
+    if i % 2 == 0:
+      yield i
+
+print(list(numbers(11))) # prints [0, 2, 4, 6, 8, 10]
+
+# Using generators results in improved performance, which is the result of the lazy (on demand) generation of values,
+# which translates to lower memory usage. 
+# Furthermore, we do not need to wait until all the elements have been generated before we start to use them.
