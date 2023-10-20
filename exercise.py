@@ -277,6 +277,9 @@ new_words = list(map(lambda x: x.capitalize(), words))
 print(new_words)
 
 # 3. Create a list of strings and use map() and a lambda function to reverse each string in the list.
+strings = ["hello", "world", "python", "exercise"]
+reversed_strings = list(map(lambda x: x[::-1], strings))
+print("Reversed Strings:", reversed_strings)
 
 # 4. Given a list of integers, use filter() and a lambda function 
 # to create a new list containing only the even numbers.
