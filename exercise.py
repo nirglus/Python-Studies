@@ -273,6 +273,8 @@ print(new_list)
 
 # 2. Given a list of words, use map() and a lambda function to capitalize the first letter of each word.
 words = ["apple", "banana", "cherry", "date"]
+new_words = list(map(lambda x: x.capitalize(), words))
+print(new_words)
 
 # 3. Create a list of strings and use map() and a lambda function to reverse each string in the list.
 
