@@ -305,3 +305,6 @@ print("Words with 6 chars or more:", long_words)
 
 # 2. Create a generator function to generate the Fibonacci sequence up to a given limit. 
 # The generator should yield Fibonacci numbers one by one.
+
+# 3. Write a generator function that yields numbers within a custom range, 
+# similar to the built-in range() function.
