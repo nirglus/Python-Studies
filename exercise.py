@@ -296,3 +296,5 @@ print("Names with 'a':" ,a_names)
 # 6. Given a list of words, use filter() and a lambda function to create a new list 
 # with words that have a length of 6 or more characters.
 words = ["apple", "banana", "cherry", "date", "elephant", "grape"]
+long_words = list(filter(lambda x: len(x) >= 6, words))
+print("Words with 6 chars or more:", long_words)
