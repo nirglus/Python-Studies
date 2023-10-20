@@ -267,6 +267,9 @@ print(groceries)
 #! ------------ Lambda, map and filter exercise ------------- 
 # 1. Use map() and a lambda function to square each number in a list of integers
 #  and create a new list with the squared values.
+integers = [2, 4, 6, 8, 10, 12]
+new_list = list(map(lambda x: x**2, integers))
+print(new_list)
 
 # 2. Given a list of words, use map() and a lambda function to capitalize the first letter of each word.
 words = ["apple", "banana", "cherry", "date"]
