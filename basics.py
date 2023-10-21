@@ -695,3 +695,26 @@ print(list(numbers(11))) # prints [0, 2, 4, 6, 8, 10]
 # Using generators results in improved performance, which is the result of the lazy (on demand) generation of values,
 # which translates to lower memory usage. 
 # Furthermore, we do not need to wait until all the elements have been generated before we start to use them.
+
+# ----------- Task -------------
+# You need to create a generator function primeGenerator(), that will take two numbers as arguments, 
+# and use the isPrime() function to output the prime numbers in the given range (between the two arguments).
+# The given code takes the two arguments as input
+# and passes them to the generator function, outputting the result as a list.
+def isPrime(x):
+    if x < 2:
+        return False
+    elif x == 2:
+        return True  
+    for n in range(2, x):
+        if x % n ==0:
+            return False
+    return True
+
+def primeGenerator(a, b):
+    #your code goes here
+    
+f = int(input())
+t = int(input())
+
+print(list(primeGenerator(f, t)))
