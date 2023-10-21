@@ -309,8 +309,17 @@ def num_print(n):
         i+=1
 for i in num_print(10):
     print(i)
+
 # 2. Create a generator function to generate the Fibonacci sequence up to a given limit. 
 # The generator should yield Fibonacci numbers one by one.
+def fibonacci(n):
+    a, b = 0 , 1
+    while a <= n:
+        yield a
+        a, b = b, a + b
+        
+for i in fibonacci(100):
+    print(i)
 
 # 3. Write a generator function that yields numbers within a custom range, 
 # similar to the built-in range() function.
