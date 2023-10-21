@@ -712,8 +712,10 @@ def isPrime(x):
     return True
 
 def primeGenerator(a, b):
-    #your code goes here
-    
+    while a < b:
+        if isPrime(a) == True:
+            yield a
+        a +=1
 f = int(input())
 t = int(input())
 
