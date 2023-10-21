@@ -317,9 +317,16 @@ def fibonacci(n):
     while a <= n:
         yield a
         a, b = b, a + b
-        
+
 for i in fibonacci(100):
     print(i)
 
 # 3. Write a generator function that yields numbers within a custom range, 
 # similar to the built-in range() function.
+def custom_range(n):
+    i = 0
+    while i < n:
+        yield i
+        i+=1
+for i in custom_range(7):
+    print(i)
