@@ -341,6 +341,16 @@ for i in countdown(20):
 
 # 5. Define a generator function that splits a string into words and yields each word one by one. 
 # Use whitespace as the default delimiter.
+def str_split(words):
+    words_list = words.split()
+    n = 0
+    while n < len(words_list):
+        yield words_list[n]
+        n+=1
+
+for i in str_split("Let's split this text"):
+    print(i)
+        
 
 #! ------------ Decorator exercise ------------- 
 # 1. Create a decorator that adds a greeting to the result of a function.
