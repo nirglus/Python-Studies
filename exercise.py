@@ -330,3 +330,5 @@ def custom_range(n):
         i+=1
 for i in custom_range(7):
     print(i)
+
+# 4. Write a generator function that counts down from a specified number to 1, yielding each countdown value.
