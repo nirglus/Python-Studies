@@ -377,3 +377,14 @@ def convtxt():
 print(convtxt())
 
 # 3. Implement a decorator that logs the function name and result.
+def decor(func):
+    def wrap():
+        print(f"Function name: {func.__name__}")
+        result = func()
+        print(f"The result is: {result}")
+        return result
+    return wrap
+@decor
+def getresult():
+    return "I wonder how this function's called"
+print(getresult())
