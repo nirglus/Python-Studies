@@ -332,6 +332,12 @@ for i in custom_range(7):
     print(i)
 
 # 4. Write a generator function that counts down from a specified number to 1, yielding each countdown value.
+def countdown(n):
+    while n >= 1:
+        yield n
+        n -= 1
+for i in countdown(20):
+    print(i)
 
 # 5. Define a generator function that splits a string into words and yields each word one by one. 
 # Use whitespace as the default delimiter.
