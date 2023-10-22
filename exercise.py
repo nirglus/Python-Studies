@@ -340,3 +340,5 @@ for i in custom_range(7):
 # 1. Create a decorator that adds a greeting to the result of a function.
 
 # 2. Write a decorator that converts the result of a function to uppercase.
+
+# 3. Implement a decorator that logs the function name and result.
