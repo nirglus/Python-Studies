@@ -335,3 +335,6 @@ for i in custom_range(7):
 
 # 5. Define a generator function that splits a string into words and yields each word one by one. 
 # Use whitespace as the default delimiter.
+
+#! ------------ Decorator exercise ------------- 
+# 1. Create a decorator that adds a greeting to the result of a function.
