@@ -366,5 +366,14 @@ result = greet()
 print(result)
 
 # 2. Write a decorator that converts the result of a function to uppercase.
+def upper(func):
+    def wrap():
+        text = func()
+        return text.upper()
+    return wrap
+@upper
+def convtxt():
+    return "Decorators are fun"
+print(convtxt())
 
 # 3. Implement a decorator that logs the function name and result.
