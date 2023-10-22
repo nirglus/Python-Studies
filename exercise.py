@@ -332,3 +332,6 @@ for i in custom_range(7):
     print(i)
 
 # 4. Write a generator function that counts down from a specified number to 1, yielding each countdown value.
+
+# 5. Define a generator function that splits a string into words and yields each word one by one. 
+# Use whitespace as the default delimiter.
