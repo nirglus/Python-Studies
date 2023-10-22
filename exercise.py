@@ -354,6 +354,16 @@ for i in str_split("Let's split this text"):
 
 #! ------------ Decorator exercise ------------- 
 # 1. Create a decorator that adds a greeting to the result of a function.
+def decor(func):
+    def wrap():
+        name = func()
+        return "Hello, " + name + "!"
+    return wrap
+@decor
+def greet():
+    return "Nir"
+result = greet()
+print(result)
 
 # 2. Write a decorator that converts the result of a function to uppercase.
 
