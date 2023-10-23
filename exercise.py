@@ -407,5 +407,12 @@ def fib(x):
 print(fib(9))    
 
 # 3. Write a recursive function that calculates the sum of the digits of a positive integer.
-
+def sumup(n):
+    if n < 10:
+        return n
+    else:
+        return n % 10 + sumup(n // 10)
+    
+print(sumup(123))
+    
 # 4. Create a recursive function that calculates the result of raising a number x to a non-negative integer power n.
