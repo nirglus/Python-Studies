@@ -399,6 +399,12 @@ def factor(n):
     
 print(factor(4))
 # 2. Create a recursive function to find the nth term in the Fibonacci sequence.
+def fib(x):
+    if x == 0 or x == 1:
+        return 1
+    else:
+        return fib(x - 1) + fib(x - 2)
+print(fib(9))    
 
 # 3. Write a recursive function that calculates the sum of the digits of a positive integer.
 
