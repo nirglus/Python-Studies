@@ -391,3 +391,5 @@ print(getresult())
 
 #! ------------ Recursion exercise ------------- 
 # 1. Write a recursive function to calculate the factorial of a non-negative integer n.
+
+# 2. Create a recursive function to find the nth term in the Fibonacci sequence.
