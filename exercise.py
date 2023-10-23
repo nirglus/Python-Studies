@@ -395,3 +395,5 @@ print(getresult())
 # 2. Create a recursive function to find the nth term in the Fibonacci sequence.
 
 # 3. Write a recursive function that calculates the sum of the digits of a positive integer.
+
+# 4. Create a recursive function that calculates the result of raising a number x to a non-negative integer power n.
