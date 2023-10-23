@@ -797,3 +797,16 @@ def fib(x):
  else:
   return fib(x-1) + fib(x-2)
 print(fib(4))
+
+# ----------- Task -------------
+
+# The given code defines a recursive function convert(),
+# which needs to convert its argument from decimal to binary.
+# However, the code has an error.
+# Fix the code by adding the base case for the recursion, 
+# then take a number from user input and call the convert() function, to output the result.
+# Sample Input : 8
+# Sample Output : 1000
+# The binary representation of 8 is 1000.
+def convert(num): 
+   return (num % 2 + 10 * convert(num // 2)) 
