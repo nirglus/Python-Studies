@@ -391,7 +391,13 @@ print(getresult())
 
 #! ------------ Recursion exercise ------------- 
 # 1. Write a recursive function to calculate the factorial of a non-negative integer n.
-
+def factor(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factor(n-1)
+    
+print(factor(4))
 # 2. Create a recursive function to find the nth term in the Fibonacci sequence.
 
 # 3. Write a recursive function that calculates the sum of the digits of a positive integer.
