@@ -808,5 +808,10 @@ print(fib(4))
 # Sample Input : 8
 # Sample Output : 1000
 # The binary representation of 8 is 1000.
-def convert(num): 
-   return (num % 2 + 10 * convert(num // 2)) 
+def convert(num):
+   if num == 0:
+      return 0
+   else:  
+     return (num % 2 + 10 * convert(num // 2)) 
+
+print(convert(int(input())))
