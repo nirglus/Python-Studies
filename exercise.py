@@ -388,3 +388,6 @@ def decor(func):
 def getresult():
     return "I wonder how this function's called"
 print(getresult())
+
+#! ------------ Recursion exercise ------------- 
+# 1. Write a recursive function to calculate the factorial of a non-negative integer n.
