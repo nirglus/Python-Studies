@@ -416,3 +416,11 @@ def sumup(n):
 print(sumup(123))
     
 # 4. Create a recursive function that calculates the result of raising a number x to a non-negative integer power n.
+def power(x, n):
+    if n == 0:
+        return 1
+    else:
+        return x * power(x, n - 1)
+
+result = power(2, 3)
+print("2^3:", result)
