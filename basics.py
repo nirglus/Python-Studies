@@ -827,6 +827,13 @@ def function(named_arg, *args):
 function(1, 2, 3, 4, 5) # prints 1 and then (2, 3, 4, 5)
 # The parameter *args must come after the named parameters to a function.
 # The name args is just a convention; you can choose to use another.
+#! Another example:
+def sum_numbers(*args):
+    result = 0
+    for num in args:
+        result += num
+    return result
+sum_numbers(1, 2, 3)  # Returns 6
 
 # **kwargs (standing for keyword arguments) allows you to handle named arguments
 # that you have not defined in advance.
@@ -838,3 +845,12 @@ def my_func(x, y=7, *args, **kwargs):
 my_func(2, 3, 4, 5, 6, a=7, b=8) # prints {'a': 7, 'b': 8}
 # a and b are the names of the arguments that we passed to the function call.
 # The arguments returned by **kwargs are not included in *args.
+#! Another example:
+def display_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+display_info(name="Alice", age=30, city="New York")
+# Outputs:
+# name: Alice
+# age: 30
+# city: New York
