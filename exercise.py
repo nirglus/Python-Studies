@@ -428,3 +428,4 @@ print("2^3:", result)
 #! ----------- *args and **kwargs exercise-----------
 # 1. Write a function that takes any number of arguments and returns their sum.
 
+# 2. Create a function that takes any number of string arguments and returns their concatenation.
