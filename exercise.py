@@ -429,3 +429,5 @@ print("2^3:", result)
 # 1. Write a function that takes any number of arguments and returns their sum.
 
 # 2. Create a function that takes any number of string arguments and returns their concatenation.
+
+# 3. Implement a function that accepts a variable number of arguments and returns the maximum value among them.
