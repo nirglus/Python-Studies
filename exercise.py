@@ -424,3 +424,7 @@ def power(x, n):
 
 result = power(2, 3)
 print("2^3:", result)
+
+#! ----------- *args and **kwargs exercise-----------
+# 1. Write a function that takes any number of arguments and returns their sum.
+
