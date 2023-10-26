@@ -461,3 +461,6 @@ print(result)
 # each with its own implementations of area and perimeter calculation methods. 
 # NOTE use the pass keyword
 # (The pass statement is used as a placeholder for future code.)
+
+# 4. Define a base class Vehicle with attributes for make, model, and year, and a method to display vehicle information. 
+# Create subclasses Car and Motorcycle that inherit from the base class and provide their own implementations.
