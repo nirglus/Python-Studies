@@ -441,5 +441,8 @@ def num_conc(*args):
 num_conc("This", "will", "be", "concated")
 
 # 3. Implement a function that accepts a variable number of arguments and returns the maximum value among them.
+def find_max(*args):
+    return max(args)
+print(find_max(2,7,8,5,4,9,1))
 
 # 4. Write a function that creates a dictionary using keyword arguments.
