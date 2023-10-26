@@ -446,3 +446,7 @@ def find_max(*args):
 print(find_max(2,7,8,5,4,9,1))
 
 # 4. Write a function that creates a dictionary using keyword arguments.
+def new_dictionary(**kargs):
+    return kargs
+result = new_dictionary(name="Max", age=26, city="Amsterdam", country="Netherlands")
+print(result) 
