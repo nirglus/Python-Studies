@@ -903,3 +903,21 @@ print(felix.legs) # prints 4
 
 # In the example above, the __init__ method takes two arguments and assigns them to the object's attributes.
 #  The __init__ method is called the class constructor.
+
+#! ----------- Methods -----------
+# Classes can have other methods defined to add functionality to them.
+# Remember, that all methods must have self as their first parameter.
+# These methods are accessed using the same dot syntax as attributes.
+class Dog:
+  def __init__(self, name, color):
+    self.name = name
+    self.color = color
+
+  def bark(self):
+    print("Woof!")
+
+archik = Dog("Archik", "Black")
+print(archik.name)
+print(archik.color)
+archik.bark()
+# NOTE Class attributes are shared by all instances of the class.
