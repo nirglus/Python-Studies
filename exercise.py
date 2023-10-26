@@ -456,3 +456,8 @@ print(result)
 
 # 2. Create a subclass Student that inherits from the Person class and adds an attribute for student_id. 
 # Override the display_info method to include the student's ID.
+
+# 3. Define a base class Shape with methods for calculating area and perimeter. Create two subclasses, Rectangle and Circle, 
+# each with its own implementations of area and perimeter calculation methods. 
+# NOTE use the pass keyword
+# (The pass statement is used as a placeholder for future code.)
