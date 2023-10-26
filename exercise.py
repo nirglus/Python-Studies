@@ -459,11 +459,20 @@ class Person:
         self.age = age
     def show_person(self):
         print(f"Name: {self.name}, Age: {self.age}")
-anna = Person("Anna", "23")
+anna = Person("Anna", 23)
 anna.show_person()
 
 # 2. Create a subclass Student that inherits from the Person class and adds an attribute for student_id. 
 # Override the display_info method to include the student's ID.
+class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_id = student_id
+    def show_person(self):
+          print(f"Name: {self.name}, Age: {self.age}, Student ID: {self.student_id}")
+
+alex = Student("Alex", 18, 34786)
+alex.show_person()
 
 # 3. Define a base class Shape with methods for calculating area and perimeter. Create two subclasses, Rectangle and Circle, 
 # each with its own implementations of area and perimeter calculation methods. 
