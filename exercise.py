@@ -453,3 +453,6 @@ print(result)
 
 #! ----------- Classes exercise -----------
 # 1. Create a class called Person with attributes for name and age, and a method to print the person's information.
+
+# 2. Create a subclass Student that inherits from the Person class and adds an attribute for student_id. 
+# Override the display_info method to include the student's ID.
