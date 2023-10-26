@@ -425,7 +425,7 @@ def power(x, n):
 result = power(2, 3)
 print("2^3:", result)
 
-#! ----------- *args and **kwargs exercise-----------
+#! ----------- *args and **kwargs exercise -----------
 # 1. Write a function that takes any number of arguments and returns their sum.
 def num_sum(*args):
     result = 0
@@ -450,3 +450,6 @@ def new_dictionary(**kargs):
     return kargs
 result = new_dictionary(name="Max", age=26, city="Amsterdam", country="Netherlands")
 print(result) 
+
+#! ----------- Classes exercise -----------
+# 1. Create a class called Person with attributes for name and age, and a method to print the person's information.
