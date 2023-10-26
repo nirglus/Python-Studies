@@ -937,4 +937,8 @@ class Player:
         print(self.name + " (Level " + self.level + ")")
 
 #your code goes here
+name = input()
+2
+new_player = Player(name, level)
+new_player.intro()
 
