@@ -511,3 +511,29 @@ print("Circle Perimeter:", circle.perimeter())
 
 # 4. Define a base class Vehicle with attributes for make, model, and year, and a method to display vehicle information. 
 # Create subclasses Car and Motorcycle that inherit from the base class and provide their own implementations.
+class Vehicle:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+    def display_info(self):
+        print(f"Brand: {self.make}, Model: {self.model}, Year: {self.year}")
+
+class Car(Vehicle):
+    def __init__(self, make, model, year, doors):
+        super().__init__(make, model, year)
+        self.doors = doors
+    def display_info(self):
+        print(f"Brand: {self.make}, Model: {self.model}, Year: {self.year}, Doors: {self.doors}")
+
+class Motorcycle(Vehicle):
+    def __init__(self, make, model, year, cc):
+        super().__init__(make, model, year)
+        self.cc = cc
+    def display_info(self):
+        print(f"Brand: {self.make}, Model: {self.model}, Year: {self.year}, CC: {self.cc}")
+
+gsxr = Motorcycle("Suzuki", "GSXR", 2019, 600)
+gsxr.display_info()
+enzo = Car("Ferrari", "Enzo", "2004", 2)
+enzo.display_info()
