@@ -453,6 +453,14 @@ print(result)
 
 #! ----------- Classes exercise -----------
 # 1. Create a class called Person with attributes for name and age, and a method to print the person's information.
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def show_person(self):
+        print(f"Name: {self.name}, Age: {self.age}")
+anna = Person("Anna", "23")
+anna.show_person()
 
 # 2. Create a subclass Student that inherits from the Person class and adds an attribute for student_id. 
 # Override the display_info method to include the student's ID.
