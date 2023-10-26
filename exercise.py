@@ -435,6 +435,10 @@ def num_sum(*args):
 num_sum(3,7,10)
 
 # 2. Create a function that takes any number of string arguments and returns their concatenation.
+def num_conc(*args):
+    result = " ".join(args)
+    return result
+num_conc("This", "will", "be", "concated")
 
 # 3. Implement a function that accepts a variable number of arguments and returns the maximum value among them.
 
