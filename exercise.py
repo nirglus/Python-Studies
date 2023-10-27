@@ -548,7 +548,7 @@ class Employee:
     def display_info(self):
         print(f"Name: {self.name}, ID: {self.employee_id}, Salary: ${self.salary}")
     def raise_sal(self, raise_am):
-        self.salary =+ self.salary + raise_am
+        self.salary += raise_am
 
 james = Employee("James", 38745, 5000) 
 james.display_info()
@@ -557,3 +557,22 @@ james.display_info()
 
 # 6. Define a class BankAccount with attributes for account_number, account_holder, and balance.
 #  Create methods for depositing and withdrawing money from the account.
+class BankAccount:
+    def __init__(self, account_number, account_holder, balance):
+        self.account_number = account_number
+        self.account_holder = account_holder
+        self.balance = balance
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Balance after deposit: ${self.balance}")
+    def withdraw(self, amount):
+        if amount < self.balance:
+            self.balance -= amount
+            print(f"Balance after withdraw: ${self.balance}")
+        else:
+            print("You can not withdraw so much money!")
+james = BankAccount(88888, "James Jameson", 20000)
+print(james.balance)
+james.deposit(2000)
+james.withdraw(22000)
+james.withdraw(1000)
