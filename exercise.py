@@ -579,3 +579,28 @@ james.withdraw(1000)
 
 # 7. Create a class Book with attributes for title, author, and publication_year. 
 # Then, create a class Library that manages a collection of books, including methods to add, remove, and list books.
+class Book: 
+    def __init__(self, title, author, publication_year):
+        self.title = title
+        self.author = author
+        self.publication_year = publication_year
+
+class Library:
+    def __init__(self):
+        self.books = []
+    def add(self, book):
+        self.books.append(book)
+    def remove(self, title):
+        self.books = [book for book in self.books if book.title != title]
+    def list_books(self):
+        for book in self.books:
+            print(f"Title: {book.title}, Author: {book.author}, Year: {book.publication_year}")
+
+book1 = Book("The Godfather", "Mario Puzo", 1972)
+book2 = Book("Harry Poter", "J.K Rawling", 1984)
+library = Library()
+library.add(book1)
+library.add(book2)
+library.list_books()
+library.remove("Harry Poter")
+library.list_books()
