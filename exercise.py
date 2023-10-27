@@ -540,6 +540,20 @@ enzo.display_info()
 
 # 5. Create a class called Employee with attributes for name, employee_id, and salary. 
 # Add methods to display employee information and give a raise to the employee.
+class Employee:
+    def __init__(self, name, employee_id, salary):
+        self.name = name
+        self.employee_id = employee_id
+        self.salary = salary
+    def display_info(self):
+        print(f"Name: {self.name}, ID: {self.employee_id}, Salary: ${self.salary}")
+    def raise_sal(self, raise_am):
+        self.salary =+ self.salary + raise_am
+
+james = Employee("James", 38745, 5000) 
+james.display_info()
+james.raise_sal(2000)
+james.display_info()   
 
 # 6. Define a class BankAccount with attributes for account_number, account_holder, and balance.
 #  Create methods for depositing and withdrawing money from the account.
