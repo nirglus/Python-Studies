@@ -576,3 +576,6 @@ print(james.balance)
 james.deposit(2000)
 james.withdraw(22000)
 james.withdraw(1000)
+
+# 7. Create a class Book with attributes for title, author, and publication_year. 
+# Then, create a class Library that manages a collection of books, including methods to add, remove, and list books.
