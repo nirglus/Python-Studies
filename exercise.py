@@ -537,3 +537,6 @@ gsxr = Motorcycle("Suzuki", "GSXR", 2019, 600)
 gsxr.display_info()
 enzo = Car("Ferrari", "Enzo", "2004", 2)
 enzo.display_info()
+
+# 5. Create a class called Employee with attributes for name, employee_id, and salary. 
+# Add methods to display employee information and give a raise to the employee.
