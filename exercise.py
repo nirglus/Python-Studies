@@ -540,3 +540,6 @@ enzo.display_info()
 
 # 5. Create a class called Employee with attributes for name, employee_id, and salary. 
 # Add methods to display employee information and give a raise to the employee.
+
+# 6. Define a class BankAccount with attributes for account_number, account_holder, and balance.
+#  Create methods for depositing and withdrawing money from the account.
