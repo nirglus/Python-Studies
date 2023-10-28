@@ -604,3 +604,7 @@ library.add(book2)
 library.list_books()
 library.remove("Harry Poter")
 library.list_books()
+
+# 8. Create a class Student with magic methods __init__ and __str__. 
+# The __init__ method initializes a student's name and age, 
+# and the __str__ method returns a custom string representation.
