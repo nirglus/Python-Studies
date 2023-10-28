@@ -611,3 +611,5 @@ library.list_books()
 
 # 9. Define a class Point with magic methods __init__, __str__, and __add__ to represent 2D points. 
 # The __add__ method should allow you to add two points element-wise.
+
+# 10. Create a class MyList with magic methods __init__, __str__, __len__, and __getitem__ to simulate a simple list.
