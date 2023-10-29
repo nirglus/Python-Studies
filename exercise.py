@@ -653,3 +653,6 @@ print(my_list[3])
 
 # 12. Create a class Calculator with a private method _add to add two numbers. 
 # Use a public method to access the private method.
+
+# 13. Define a class Circle with a private variable _radius.
+# Implement a method to calculate the area of the circle while keeping _radius hidden.
