@@ -620,5 +620,18 @@ print(frank)
 
 # 9. Define a class Point with magic methods __init__, __str__, and __add__ to represent 2D points. 
 # The __add__ method should allow you to add two points element-wise.
+class Point: 
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def __str__(self):
+        return f"x: {self.x}, y: {self.y}"
+    def __add__(self, other):
+        return Point(self.x + other.x , self.y + other.y)
+point1 = Point(2, 1)
+point2 = Point(5, 4)
+result = point1 + point2
+print(result)
+
 
 # 10. Create a class MyList with magic methods __init__, __str__, __len__, and __getitem__ to simulate a simple list.
