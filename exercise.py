@@ -648,3 +648,5 @@ print(my_list)
 print(len(my_list))
 print(my_list[3])
 
+# 11. Create a class Person with a private variable _ssn to represent a Social Security Number. 
+# Add methods to set and get the SSN with data hiding, ensuring that the SSN is stored privately.
