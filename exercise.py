@@ -608,6 +608,15 @@ library.list_books()
 # 8. Create a class Student with magic methods __init__ and __str__. 
 # The __init__ method initializes a student's name and age, 
 # and the __str__ method returns a custom string representation.
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def __str__(self):
+        return f"Name: {self.name}, Age: {self.age}"
+
+frank = Student("Frank", 21)
+print(frank)
 
 # 9. Define a class Point with magic methods __init__, __str__, and __add__ to represent 2D points. 
 # The __add__ method should allow you to add two points element-wise.
