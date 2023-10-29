@@ -1153,7 +1153,10 @@ class Shape:
         return self.width*self.height
 
     #your code goes here
-    
+    def __add__(self, other):
+        return Shape(self.width + other.width, self.height + other.height)
+    def __gt__(self,other):
+        return self.area() > other.area()
 w1 = int(input())
 h1 = int(input())
 w2 = int(input())
