@@ -633,5 +633,18 @@ point2 = Point(5, 4)
 result = point1 + point2
 print(result)
 
-
 # 10. Create a class MyList with magic methods __init__, __str__, __len__, and __getitem__ to simulate a simple list.
+class MyList:
+    def __init__(self, *elems):
+        self.elems = list(elems)
+    def __str__(self):
+        return self.elems
+    def __len__(self):
+        return len(self.elems)
+    def __getitem__(self,index):
+        return self.elems[index]
+my_list = MyList(1, 7, 4, 2, 8 ,22)
+print(my_list)
+print(len(my_list))
+print(my_list[3])
+
