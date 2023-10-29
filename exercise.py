@@ -650,6 +650,19 @@ print(my_list[3])
 
 # 11. Create a class Person with a private variable _ssn to represent a Social Security Number. 
 # Add methods to set and get the SSN with data hiding, ensuring that the SSN is stored privately.
+class Person: 
+    def __init__(self, name, ssn):
+        self.name = name
+        self._ssn = ssn
+    def set_ssn(self, ssn):
+        self._ssn = ssn
+    def get_ssn(self):
+        return self._ssn
+    
+person1 = Person("Alex", "1-234-567-89")
+print("Name:", person1.name)
+print("SSN (Hidden):", person1.get_ssn())
+    
 
 # 12. Create a class Calculator with a private method _add to add two numbers. 
 # Use a public method to access the private method.
