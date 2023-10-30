@@ -666,6 +666,15 @@ print("SSN (Hidden):", person1.get_ssn())
 
 # 12. Create a class Calculator with a private method _add to add two numbers. 
 # Use a public method to access the private method.
+class Calculator: 
+    def _add(self, x , y):
+        return x + y
+    def add_nums(self, x , y):
+        return self._add(x, y)
+
+calc = Calculator()
+calc._add(2, 3) # prints 5
+calc.add_nums(2 ,3) # prints 5
 
 # 13. Define a class Circle with a private variable _radius.
 # Implement a method to calculate the area of the circle while keeping _radius hidden.
