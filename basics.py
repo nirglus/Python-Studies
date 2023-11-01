@@ -1304,6 +1304,13 @@ To make the code work, you need to define the Shape class, and the static area()
 which should return the multiplication of its two arguments.
 """
 #your code goes here
+class Shape:
+    def __init__(self, w, h):
+        self.w = w
+        self.h = h
+    @staticmethod
+    def area(w,h):
+        return w * h
 
 w = int(input())
 h = int(input())
