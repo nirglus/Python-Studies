@@ -678,3 +678,15 @@ calc.add_nums(2 ,3) # prints 5
 
 # 13. Define a class Circle with a private variable _radius.
 # Implement a method to calculate the area of the circle while keeping _radius hidden.
+import math
+class Circle:
+    def __init__ (self, radius):
+        self._radius = radius
+    def _area(self):
+        return self._radius ** 2 * math.pi
+    def display_area(self):
+        return self._area()
+
+circle1 = Circle(2)
+area = circle1.display_area()
+print("Circle Area:", area)
