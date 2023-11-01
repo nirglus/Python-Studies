@@ -1295,3 +1295,17 @@ if all(Pizza.validate_topping(i) for i in ingredients):
 
 # Static methods behave like plain functions, 
 # except for the fact that you can call them from an instance of the class.
+
+# ----------- Task -----------
+""" 
+The given code takes 2 numbers as input and calls the static area() method of the Shape class, 
+to output the area of the shape, which is equal to the height multiplied by the width.
+To make the code work, you need to define the Shape class, and the static area() method, 
+which should return the multiplication of its two arguments.
+"""
+#your code goes here
+
+w = int(input())
+h = int(input())
+
+print(Shape.area(w, h))
