@@ -1267,3 +1267,31 @@ It returns a new object of the class cls.
 Technically, the parameters self and cls are just conventions; they could be changed to anything else. 
 However, they are universally followed, so it is wise to stick to using them.
 """
+
+#! ----------- Static Methods -----------
+"""
+Static methods are similar to class methods, except they don't receive any additional arguments;
+they are identical to normal functions that belong to a class.
+They are marked with the staticmethod decorator.
+"""
+class Pizza:
+  def __init__(self, toppings):
+    self.toppings = toppings
+
+  @staticmethod
+  def validate_topping(topping):
+    if topping == "pineapple":
+      raise ValueError("No pineapples!")
+    else:
+      return True
+    
+  def __str__(self):
+    return f"A delicious pizza with toppings: {', '.join(self.toppings)}"
+
+ingredients = ["cheese", "onions", "spam"]
+if all(Pizza.validate_topping(i) for i in ingredients):
+  pizza = Pizza(ingredients)
+  print(pizza)
+
+# Static methods behave like plain functions, 
+# except for the fact that you can call them from an instance of the class.
