@@ -708,5 +708,22 @@ class Counter:
 Counter.increment()
 Counter.increment()
 print("Count:", Counter.get_count())
+
 # 15. Create a class StringSplitter with a class method split_string that splits a string into a list of words. 
 # Use the @classmethod decorator to provide an alternative constructor.
+class StringSplitter:
+    def __init__(self, text):
+        self.text = text
+
+    @classmethod
+    def split_string(cls, text):
+        words = text.split(", ")
+        return cls(" ".join(words))
+
+    def get_text(self):
+        return self.text
+
+text = "Hello, World"
+split_text = StringSplitter.split_string(text)
+print("Original Text:", text)
+print("Split Text:", split_text.get_text())
