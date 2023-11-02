@@ -1470,3 +1470,42 @@ try:
    withdraw(amount)
 except ValueError:
    print("Please enter a number")
+
+#! ----------- Finally/Else -----------
+#! Finally
+# After a try/except statement, a finally block can follow. 
+# It will execute after the try/except block, no matter if an exception occurred or not.
+try:
+   print("Hello")
+   print(1 / 0)
+except ZeroDivisionError:
+   print("Divided by zero")
+finally:
+   print("This code will run no matter what")
+# Prints:
+# Hello
+# Divided by zero
+# This code will run no matter what
+"""
+The finally block is useful, for example, when working with files and resources: 
+it can be used to make sure files or resources are closed or released regardless of whether an exception occurs.
+"""
+#! Else
+# The else statement can also be used with try/except statements.
+# In this case, the code within it is only executed if no error occurs in the try statement.
+try:
+   print(1)
+except ZeroDivisionError:
+   print(2)
+else:
+   print(3)
+
+#! prints 1 and 3 (try and else)
+
+try:
+   print(1/0)
+except ZeroDivisionError:
+   print(4)
+else:
+   print(5)
+#! prints only 4 (only except)
