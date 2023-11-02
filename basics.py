@@ -1538,6 +1538,8 @@ tweet = input()
 
 try:
     #your code goes here
+        if len(tweet) > 42:
+        raise ValueError 
     
 except:
     print("Error")
