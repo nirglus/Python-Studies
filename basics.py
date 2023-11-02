@@ -1451,4 +1451,17 @@ try:
 except:
     exc_type, exc_value, exc_traceback = sys.exc_info()
     print(f"An error occurred: {exc_type.__name__} - {exc_value}")
-#! prints: An error occurred: TypeError - unsupported operand type(s) for /: 'str' and 'int'      
+#! prints: An error occurred: TypeError - unsupported operand type(s) for /: 'str' and 'int'   
+
+# ----------- Task -----------
+"""
+An ATM machine takes the amount to be withdrawn as input and calls the corresponding withdrawal method.
+In case the input is not a number, the machine should output "Please enter a number".
+Use exception handling to take a number as input, call the withdraw() method with the input as its argument, 
+and output "Please enter a number", in case the input is not a number.
+"""
+# A ValueError is raised when you try to convert a non-integer to an integer using int().
+def withdraw(amount):
+   print(str(amount) + " withdrawn!")
+
+#your code goes here
