@@ -690,3 +690,6 @@ class Circle:
 circle1 = Circle(2)
 area = circle1.display_area()
 print("Circle Area:", area)
+
+# 14. Create a class Counter with a class variable count and a class method increment that increments the count.
+# Implement a class method get_count to retrieve the current count.
