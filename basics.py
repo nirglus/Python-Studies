@@ -1394,3 +1394,61 @@ ValueError: a function is called on a value of the correct type, but with an ina
 """
 # Python has several other built-in exceptions, such as ZeroDivisionError and OSError. 
 # Third-party libraries also often define their own exceptions.
+
+#! ----------- Exception Handling -----------
+"""
+When an exception occurs, the program stops executing.
+To handle exceptions, and to call code when an exception occurs, you can use a try/except statement.
+The try block contains code that might throw an exception. 
+If that exception occurs, the code in the try block stops being executed, and the code in the except block is run. 
+If no error occurs, the code in the except block doesn't run.
+"""
+try:
+   num1 = 7
+   num2 = 0
+   print (num1 / num2)
+   print("Done calculation")
+except ZeroDivisionError:
+   print("An error occurred")
+   print("due to zero division")
+
+# As the code produces a ZeroDivisionError exception, the code in the except block is run.
+# In the code above, the except statement defines the type of exception to handle (in our case, the ZeroDivisionError).
+
+# A try statement can have multiple different except blocks to handle different exceptions.
+# Multiple exceptions can also be put into a single except block using parentheses, to have the except block handle all of them.
+try:
+   variable = 10
+   print(variable + "hello")
+   print(variable / 2)
+except ZeroDivisionError:
+   print("Divided by zero")
+except (ValueError, TypeError):
+   print("Error occurred")
+
+# NOTE You can handle as many exceptions in the except statement as you need.
+"""
+An except statement without any exception specified will catch all errors. These should be used sparingly, 
+as they can catch unexpected errors and hide programming mistakes.
+"""
+try:
+   word = "spam"
+   print(word / 0)
+except:
+   print("An error occurred")
+
+# Exception handling is particularly useful when dealing with user input.
+"""
+If you want to print the details of the error that occurred without specifying a specific exception type 
+(i.e., using an empty except block), you can use the sys.exc_info() function to access the exception information. 
+Here's how you can do it:
+"""
+import sys
+
+try:
+    word = "spam"
+    print(word / 0)
+except:
+    exc_type, exc_value, exc_traceback = sys.exc_info()
+    print(f"An error occurred: {exc_type.__name__} - {exc_value}")
+#! prints: An error occurred: TypeError - unsupported operand type(s) for /: 'str' and 'int'      
