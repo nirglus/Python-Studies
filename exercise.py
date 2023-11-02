@@ -693,3 +693,6 @@ print("Circle Area:", area)
 
 # 14. Create a class Counter with a class variable count and a class method increment that increments the count.
 # Implement a class method get_count to retrieve the current count.
+
+# 15. Create a class StringSplitter with a class method split_string that splits a string into a list of words. 
+# Use the @classmethod decorator to provide an alternative constructor.
