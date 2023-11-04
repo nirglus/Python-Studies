@@ -1642,3 +1642,24 @@ print(amount_written) # prints 12
 file.close()
 
 # NOTE To write something other than a string, it needs to be converted to a string first.
+
+#! ----------- Working with files -----------
+# It is good practice to avoid wasting resources by making sure that files are always closed after they have been used. 
+# One way of doing this is to use try and finally.
+try:
+  f = open("/usercode/files/books.txt")
+  cont = f.read()
+  print(cont)
+finally:
+ f.close()
+# NOTE This ensures that the file is always closed, even if an error occurs.
+
+"""
+An alternative way of doing this is by using with statements.This creates a temporary variable (often called f), 
+which is only accessible in the indented block of the with statement.
+"""
+with open("/usercode/files/books.txt") as f:
+  print(f.read())
+
+# The file is automatically closed at the end of the with statement, even if exceptions occur within it.
+
