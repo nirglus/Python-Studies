@@ -1585,3 +1585,29 @@ open("filename.txt", "wb")
 file = open("filename.txt", "w")
 # do stuff to the file
 file.close()
+
+#! ----------- Reading files -----------
+# The contents of a file that has been opened in text mode can be read using the read method.
+file = open("books.txt")
+cont = file.read()
+print(cont) # prints the content of books.txt
+file.close()
+
+# To read only a certain amount of a file, you can provide the number of bytes to read as an argument to the read function.
+# Each ASCII character is 1 byte:
+file = open("books.txt")
+print(file.read(5)) # prints the first 5 characters of the file
+print(file.read(7)) # prints the next 7 characters of the file
+print(file.read()) # prints the rest of the file
+file.close()
+
+# NOTE Calling the read() method without an argument will return the rest of the file content.
+
+# To retrieve each line in a file, 
+# you can use the readlines() method to return a list in which each element is a line in the file.
+file = open("books.txt")
+
+for line in file.readlines():
+    print(line)
+    
+file.close()
