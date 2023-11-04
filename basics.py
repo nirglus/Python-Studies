@@ -1619,3 +1619,26 @@ file = open("/usercode/files/books.txt")
 #your code goes here
 n = int(input())
 print(file.read(n))
+
+#! ----------- Writing files -----------
+# To write to files you use the write method.
+file = open("newfile.txt", "w")
+file.write("This has been written to a file")
+file.close()
+# This will create a new file called "newfile.txt" and write the content to it.
+# NOTE In case the file already exists, its entire content will be replaced when you open it in write mode using "w".
+
+# If you want to add content to an existing file, you can open it using the "a" mode, which stand for "append":
+file = open("/books.txt", "a")
+file.write("\nThe Da Vinci Code") #! \n stands for a new line
+file.close()
+# This will add a new line with a new book title to the file.
+
+# The write method returns the number of bytes written to a file, if successful.
+msg = "Hello world!"
+file = open("newfile.txt", "w")
+amount_written = file.write(msg)
+print(amount_written) # prints 12
+file.close()
+
+# NOTE To write something other than a string, it needs to be converted to a string first.
