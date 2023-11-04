@@ -1617,3 +1617,5 @@ file.close()
 # Take a number N as input and output the first N characters of the books.txt file.
 file = open("/usercode/files/books.txt")
 #your code goes here
+n = int(input())
+print(file.read(n))
