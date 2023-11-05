@@ -730,7 +730,14 @@ print("Split Text:", split_text.get_text())
 
 #! ----------- Exceptions exercise -----------
 # 1. Write a program that takes two numbers as input and handles a ZeroDivisionError if the second number is zero.
-
+try:
+    num1 = input("Enter first number:")
+    num2 = input("Enter second number:")
+    result = num1 / num2
+    print("Result:", result)
+except ZeroDivisionError:
+    print("Can't divide by 0!")
+    
 # 2. Create a program that attempts to open a file and handles a FileNotFoundError if the file does not exist.
 
 # 3. Write a program that handles an IndexError when accessing an element of a list that is out of bounds.
