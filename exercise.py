@@ -727,3 +727,6 @@ text = "Hello, World"
 split_text = StringSplitter.split_string(text)
 print("Original Text:", text)
 print("Split Text:", split_text.get_text())
+
+#! ----------- Exceptions exercise -----------
+# 1. Write a program that takes two numbers as input and handles a ZeroDivisionError if the second number is zero.
