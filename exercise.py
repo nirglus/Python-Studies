@@ -755,5 +755,8 @@ except IndexError:
     print("Error: Such index does not exist!")
 
 # 4. Create a program that handles a NameError when attempting to access an undefined variable.
-
+try: 
+    print(undefined_var)
+except:
+    print("Error: Such variable does not exist!")
 # 5. Write a program that handles a TypeError when trying to concatenate a string and an integer.
