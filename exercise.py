@@ -736,3 +736,5 @@ print("Split Text:", split_text.get_text())
 # 3. Write a program that handles an IndexError when accessing an element of a list that is out of bounds.
 
 # 4. Create a program that handles a NameError when attempting to access an undefined variable.
+
+# 5. Write a program that handles a TypeError when trying to concatenate a string and an integer.
