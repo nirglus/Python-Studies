@@ -745,8 +745,14 @@ try:
         print(cont)
 except FileNotFoundError:
     print("Error: The file does not exist!")
-    
+
 # 3. Write a program that handles an IndexError when accessing an element of a list that is out of bounds.
+try: 
+    a_list = (1 , 2 , 4 , 7 , 3 , 8)
+    index = int(input("Enter an index:"))
+    print(a_list[index])
+except IndexError:
+    print("Error: Such index does not exist!")
 
 # 4. Create a program that handles a NameError when attempting to access an undefined variable.
 
