@@ -733,3 +733,4 @@ print("Split Text:", split_text.get_text())
 
 # 2. Create a program that attempts to open a file and handles a FileNotFoundError if the file does not exist.
 
+# 3. Write a program that handles an IndexError when accessing an element of a list that is out of bounds.
