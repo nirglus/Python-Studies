@@ -1678,3 +1678,8 @@ count the number of spaces (for example, if a string contains 2 spaces, then it 
 """
 with open("/usercode/files/books.txt") as f:
    #your code goes here
+   line_num = 1
+   for line in f.readlines():
+      words = line.count(" ") + 1
+      print(f"Line {line_num}: {words} words")
+      line_num += 1
