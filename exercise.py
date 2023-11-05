@@ -759,4 +759,11 @@ try:
     print(undefined_var)
 except:
     print("Error: Such variable does not exist!")
+
 # 5. Write a program that handles a TypeError when trying to concatenate a string and an integer.
+try: 
+    num = int(input("Enter a number:"))
+    string = str(input("Enter a string:"))
+    print("Value:", num + string)
+except TypeError:
+    print("Error: Can not concatenate string with integer!")
